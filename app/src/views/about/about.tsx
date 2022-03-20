@@ -15,10 +15,10 @@ const About: React.FC<PageProps> = () => {
         Copyright © {new Date().getFullYear()}{' '}
         <a
           onClick={() => {
-            shell.openExternal('https://github.com/lanten');
+            shell.openExternal('https://github.com/jsl6/electron-typescript-react-antd-boilerplate');
           }}
         >
-          lanten.
+          jsl6/electron-typescript-react-antd-boilerplate.
         </a>{' '}
         All rights (demo)
       </p>
