@@ -1,8 +1,9 @@
+const { NODE_ENV } = process.env;
 const routes: RouteConfig[] = [
   {
     name: 'Home',
     path: '/',
-    redirectTo: '/demo?form=home',
+    redirectTo: '/demo?from=home',
     windowOptions: {
       title: 'App Home (redirect to demo)',
       width: 1200,
@@ -14,7 +15,7 @@ const routes: RouteConfig[] = [
       showSidebar: true,
       showCustomTitlebar: true,
       saveWindowBounds: true,
-      openDevTools: true,
+      openDevTools: NODE_ENV === 'development',
     },
   },
 ];
